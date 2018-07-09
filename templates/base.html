@@ -4,12 +4,14 @@
 <title>website project</title>
 <head> 
        <h1>new</h1>
+       {% include 'snippets/css.html' %}
 </head>
 
 <body>
         <div class="container">
                 {% block content %}{% endblock content %}
         </div>
+        {% include 'snippets/js.html' %}
 </body>
 	
 </html>
