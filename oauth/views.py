@@ -21,3 +21,5 @@ def home2(request):
 def home3(request):
 	
 	return render(request, "home3.html")
+
+#class ContactView(View):
