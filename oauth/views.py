@@ -22,4 +22,10 @@ def home3(request):
 	
 	return render(request, "home3.html")
 
-#class ContactView(View):
+class ContactView(View):
+	def get(self, request, *args, **kwargs):
+		context = {
+		"yeehonk": True, 
+		"num": num,
+		}
+		return render(request, "home3.html", context)

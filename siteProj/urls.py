@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from oauth.views import home, home2, home3
+from oauth.views import home, home2, home3, ContactView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', home),
