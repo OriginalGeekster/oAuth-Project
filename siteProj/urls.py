@@ -20,5 +20,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', home),
     url(r'^hello/$', home2),
-    url(r'^home3/$', home3),
+    url(r'^home3/$', ContactView.as_view()),
 ]

@@ -25,7 +25,6 @@ def home3(request):
 class ContactView(View):
 	def get(self, request, *args, **kwargs):
 		context = {
-		"yeehonk": True, 
-		"num": num,
+		"yeehonk": True,
 		}
 		return render(request, "home3.html", context)
