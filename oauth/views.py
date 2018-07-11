@@ -5,6 +5,7 @@ import random
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views import View
+from django.views.generic.base import TemplateView
 
 def home(request):
 	num = random.randint(0, 500)
@@ -28,3 +29,6 @@ class ContactView(View):
 		"yeehonk": True,
 		}
 		return render(request, "home3.html", context)
+
+class ContactTemplateView(TemplateView):
+	template_name = "home3"

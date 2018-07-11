@@ -3,12 +3,19 @@
 <html> 
 <title>website project</title>
 <head> 
-       <div class="container"><h1>new</h1></div>
+       <div class="container">
+               <a href="/"><h1>new</h1></a>
+        </div>
        {% include 'snippets/css.html' %}
 </head>
 
 <body>
         <div class="container">
+                <p>
+                        <a href="/">Home</a> <br />
+                        <a href="/hello/">Hello</a> <br />
+                        <a href="/home3">3</a> <br />
+                </p>
                 {% block content %}{% endblock content %}
         </div>
         {% include 'snippets/js.html' %}
